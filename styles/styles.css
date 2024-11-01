@@ -1,5 +1,6 @@
 
 
+
 .bg-blue{
    background-color: #000324;
 }
@@ -17,13 +18,20 @@ font: normal normal normal 20px/26px Dosis;
 letter-spacing: 0px;
 color: #FFFFFF;
 } */
-.header-photo{
+/* .header-photo{
 top: 119px;
 left: 0px;
 width: 1440px;
 height: 500px;
 opacity: 1;
 margin: 0px;
+} */
+.header-photo{
+background-image: url(/assets/header.jpg);
+height: 700px;
+background-repeat: no-repeat;
+background-size: cover;
+padding: 0;
 }
 .Welcome{
 margin-top: 100px;
@@ -32,7 +40,6 @@ left: 776px;
 width: 500px;
 height: 44px;
 text-align: left;
-font: normal normal normal 35px/44px Dosis;
 letter-spacing: 0px;
 color: #1A1B26;
 opacity: 1;
@@ -69,33 +76,61 @@ opacity: 1;
    object-fit: cover;
 }
 .textontop{
-   bottom: -630px;
+   bottom: -530px;
    position: absolute;
    color:#FFFFFF;
    font: normal normal normal 35px/44px Dosis;
 }
 .boxontop{
-   top: 253px;
-   left: 244px;
    width: 945px;
    height: 232px;
    background: #000324 0% 0% no-repeat padding-box;
    opacity: 0.8;
-   position: absolute;
    display: flex;
    flex-direction:column;
    justify-content: center;
    align-items: center;
    text-align: center;
+   margin-top:250px;
 }
+.Center{
+   display:flex;
+   justify-content: center;
+}
+
 .box-text {
-   position: absolute; 
-   top: 20px; 
-   left: 20px; 
    color: white;
-   text-align: left; 
-   margin-left: 240px;
-   margin-top: 45px;
+   text-align: center; 
+   
+}
+
+@media(max-width:768px)
+{
+   .hamsterhome{
+      top: 768px;
+   left: 393px;
+   width: 200px;
+   height: 350px;
+   margin: 0;
+   opacity: 1;
+   padding-top: 100px;
+   align-items: left;
+   }
+}
+@media screen (max-width:768px)
+{
+   .Welcome{
+margin-top: 100px;
+top: 800px;
+left: 776px;
+width: 200px;
+height: 350px;
+text-align: left;
+letter-spacing: 0px;
+color: #1A1B26;
+opacity: 1;
+font-size: 20px;;
+   }
 }
 
 .box-text h2 {
@@ -110,14 +145,8 @@ opacity: 1;
    margin-top: 20px;
 }
 
-.cardontop{
-   bottom: -1050px;
-   position: absolute;
-   color:#FFFFFF;
-   font: normal normal normal 35px/44px Dosis;
-}
 .no-border {
-   border-radius: 0; /* Remove the border */
+   border-radius: 0; 
 }
 .btn btn-primary{
    border-radius: 0;
@@ -140,7 +169,7 @@ opacity: 1;
    margin-top: 170px;
 }
 .Hamster-wedding-text{
-   bottom: -1550px;
+   bottom: -1600px;
    position: absolute;
    color:black;
    font: normal normal normal 35px/44px Dosis;
@@ -152,6 +181,14 @@ h4{
 }
 h6{
    width: 170%;
+}
+.cardheights{
+   height: 70px;
+   width:20rem;
+   color: white;
+   margin-right: 50px;
+   margin-left: 50px;
+   margin-top: 160px;
 }
 .hamsterheart-text{
    width: 120%; /* Increases the container width, making the text appear longer horizontally */
@@ -339,4 +376,13 @@ color: blue;
    display: flex;
    justify-content: center;
    margin-bottom: 50px;
+}
+
+.backgroundblue{
+   background-image: url(../assets/bg2.jpg);
+   height: 738px;
+   margin-top: 70px;
+}
+h1{
+   color:white;
 }
