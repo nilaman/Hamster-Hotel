@@ -76,8 +76,6 @@ opacity: 1;
    object-fit: cover;
 }
 .textontop{
-   bottom: -530px;
-   position: absolute;
    color:#FFFFFF;
    font: normal normal normal 35px/44px Dosis;
 }
@@ -104,34 +102,7 @@ opacity: 1;
    
 }
 
-@media(max-width:768px)
-{
-   .hamsterhome{
-      top: 768px;
-   left: 393px;
-   width: 200px;
-   height: 350px;
-   margin: 0;
-   opacity: 1;
-   padding-top: 100px;
-   align-items: left;
-   }
-}
-@media screen (max-width:768px)
-{
-   .Welcome{
-margin-top: 100px;
-top: 800px;
-left: 776px;
-width: 200px;
-height: 350px;
-text-align: left;
-letter-spacing: 0px;
-color: #1A1B26;
-opacity: 1;
-font-size: 20px;;
-   }
-}
+
 
 .box-text h2 {
    font-size: 45px; 
@@ -151,9 +122,8 @@ font-size: 20px;;
 .btn btn-primary{
    border-radius: 0;
 }
+
 .Packages-text{
-   bottom: -1250px;
-   position: absolute;
    color:black;
    font-size: 50px;
 }
@@ -169,8 +139,8 @@ font-size: 20px;;
    margin-top: 170px;
 }
 .Hamster-wedding-text{
-   bottom: -1600px;
-   position: absolute;
+   bottom: -1820px;
+   ;
    color:black;
    font: normal normal normal 35px/44px Dosis;
    margin-left:500px;   
@@ -183,6 +153,9 @@ h6{
    width: 170%;
 }
 .cardheights{
+   margin-top:150px;
+}
+.heights{
    height: 70px;
    width:20rem;
    color: white;
@@ -191,16 +164,12 @@ h6{
    margin-top: 160px;
 }
 .hamsterheart-text{
-   width: 120%; /* Increases the container width, making the text appear longer horizontally */
-    margin-top: 50px; /* Adjust vertical spacing */
+   width: 100%; /* Increases the container width, making the text appear longer horizontally */
      /* Aligns the text to the left */
-    position: relative;
-    margin-left: 100px;
 }
 .closeuphamster{
 width: 561px;
 height: 300px;
-margin-left: 50px;
 }
 .hamsterwalnut{
    height: 340px;
@@ -214,41 +183,28 @@ margin-left: 50px;
 }
 .middlebluephoto{
 height:500px;
+object-fit: cover;
+   object-position: center;
 }
 .amenities-text {
-   position: absolute; 
-   top: 30%; 
-   left: 50%;
-   transform: translate(-50%, -50%); /* Center the text */
    color: white; 
    font-size: 20px; 
    text-align: center; 
-   z-index: 4; /* Ensure it appears above the background image */
-   margin-top: 3300px;
 }
 
 .photo-overlay {
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
    width: 80%; /* Width of the container relative to .middlebluephoto */
    display: flex;
    justify-content: space-between;
-   align-items: center;
-   z-index: 2; /* Place it above the .middlebluephoto */
+   justify-content: center;
 }
-.overlay{
-   position: absolute;
-
+.text-white{
+margin-left:60px;
 }
 .overlay-photo {
-   width: 22%; 
-   height: auto;
-   object-fit: cover;
-   margin-top:6000px;
-   padding: 30px;
-   margin-right:25px;
+   width: 100%; 
+   height: 115px;
+   object-fit: contain;
 }
 
 .cards{
@@ -289,16 +245,9 @@ h{
 color: blue;
 }
 .amenities-overlay{
-
-      position: absolute; 
-      top: 50%; 
-      left: 50%; 
-      transform: translate(-50%, -50%); /* Adjust for center alignment */
       text-align: center; 
       color: white; 
-      z-index: 3; /* Ensure it appears above the image */
       font-family: "Terminal Dosis"; 
-      margin-top: 2830px;
   }
   
   .input-box {
@@ -314,6 +263,7 @@ color: blue;
    margin-right: 20px;
    vertical-align: top;
    width: 180px; /* Control box width */
+   margin-left: 50px;
 }
 
 .button{
@@ -385,4 +335,139 @@ color: blue;
 }
 h1{
    color:white;
+}
+.backgroundbeachhouse{
+background-image: url(/assets/bg.jpg);
+height: 600px;
+background-repeat: no-repeat;
+background-size: cover;
+padding: 0;
+justify-content: center;
+display:flex;
+}
+.Center2{
+   display:flex;
+   justify-content: center;
+}
+.font5{
+   font-size:30px;
+}
+
+
+@media(max-width:768px)
+{
+   .hamsterhome{
+      top: 768px;
+   left: 393px;
+   width: 200px;
+   height: 350px;
+   margin: 0;
+   opacity: 1;
+   padding-top: 100px;
+   align-items: left;
+   }
+}
+@media screen and (max-width:768px){
+.Welcome{ 
+   margin-top: 100px;
+   margin-bottom:-300px;
+   top: 800px;
+   left: 776px;
+   width: 200px;
+   height: 350px;
+   text-align: left;
+   letter-spacing: 0px;
+   color: #1A1B26;
+   opacity: 1;
+   font-size: 20px;;
+   }
+}
+@media screen and (max-width:768px){
+.thumbs{
+   width:30%;
+   flex-direction: row;
+}
+
+.photo-overlay {
+   width: 80%; /* Width of the container relative to .middlebluephoto */
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.amenities-text {
+   color: white; 
+   font-size: 20px; 
+   text-align: center; 
+}
+.amenities-overlay{
+   text-align: center; 
+   color: white; 
+   font-family: "Terminal Dosis"; 
+}
+.textontop{
+   bottom: -980px;
+
+   color:#FFFFFF;
+   font: normal normal normal 35px/44px Dosis;
+}
+.Packages-text{
+   bottom: -1750px;
+   color:black;
+   font-size: 50px;
+}
+.Hamster-wedding-text{
+   color:black;
+   font: normal normal normal 35px/44px Dosis;
+}
+.hamsterheart{
+   width: 100%;
+   height: 275px;
+   margin: 0;
+   opacity: 1;
+}
+.closeuphamster{
+   width: 100%;
+   height: 350px;
+   }
+   .hamsterheart-text{
+      width: 100%; /* Increases the container width, making the text appear longer horizontally */
+       /* Adjust vertical spacing */
+        /* Aligns the text to the left */
+
+
+   }
+   .hamsterwalnut{
+      width: 100%;
+      height: 350px;
+   }
+   .hamsterwalnuttext{
+   }
+   .heights{
+      height: 70px;
+      width:20rem;
+      color: white;
+      margin-right: 50px;
+      margin-left: 50px;
+      margin-top: 120px;
+   }
+   .middlebluephoto{
+      height:500px;
+      object-fit: cover;
+      object-position: center;
+      }
+      .objectfill{
+         object-fit: cover;
+         object-position: center;
+      }
+      .font5{
+         font-size:30px;
+      }
+      .spacing {
+         display: inline-block;
+         margin-right: 20px;
+         vertical-align: top;
+         width: 180px; /* Control box width */
+         margin-left: 130px;
+
+      }
 }
